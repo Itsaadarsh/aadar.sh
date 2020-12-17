@@ -6,7 +6,7 @@ import Home from '../pages/Home';
 const AppWrapper = styled.div`
   display: flex;
   justify-content: center;
-  background-color: #f7f7f7;
+  background-color: #cffffe;
 `;
 
 function App() {
