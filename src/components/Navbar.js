@@ -32,8 +32,8 @@ const TechStackSectionStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #dddddd;
+  padding-bottom: 1.3rem;
+  border-bottom: 2px solid #29c7ac;
 
   @media (max-width: 35rem) {
     display: none;
@@ -51,7 +51,7 @@ const SectionStyled = styled.div`
 const ProfileStyled = styled.img`
   width: 9rem;
   height: 9rem;
-  border: 1px solid #dddddd;
+  border: 1px solid #222831;
   border-radius: 5rem;
 
   @media (max-width: 35rem) {
@@ -62,6 +62,7 @@ const ProfileStyled = styled.img`
 `;
 
 const TitleStyled = styled.div`
+  color: #ececec;
   font-weight: 600;
   font-size: 1.2rem;
   margin-bottom: 0.2rem;
@@ -78,12 +79,12 @@ const ButtonStyled = styled.a`
   justify-content: center;
   font-size: 0.8rem;
   border-radius: 0.3rem;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background-color: #29c7ac;
+  border: 1px solid #29c7ac;
   height: 1.8rem;
   width: 7rem;
   text-decoration: none;
-  color: black;
+  color: #ececec;
   margin: 1rem 1rem 0 0;
   &:hover {
     cursor: pointer;
@@ -108,11 +109,11 @@ const TwitterIcon = styled(FaTwitter)`
 const TechStackButton = styled.div`
   display: flex;
   align-items: center;
-  padding: 0.1rem 0.6rem;
+  padding: 0.2rem 0.8rem;
 
-  background-color: #ffffff;
+  background-color: #ff6363;
 
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin: 0 0.5rem;
   height: 1.5rem;
 
@@ -124,7 +125,7 @@ const TechStackButton = styled.div`
   }
 
   @media (min-width: 72rem) {
-    border: 1px solid #dddddd;
+    border: 1px solid #ff6363;
     border-radius: 1rem;
   }
 `;

@@ -8,7 +8,7 @@ const CardStyled = styled.div`
   display: flex;
   flex-direction: column;
   
-  background-color: #ffffff;
+  background-color: #d3dbff;
   border-radius: 0.2rem;
 
   transition: box-shadow 200ms;
