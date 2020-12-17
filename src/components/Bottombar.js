@@ -11,7 +11,7 @@ const BottombarStyled = styled.div`
 
 const Bottombar = () => (
   <BottombarStyled>
-    Stay Tuned For More. Made by <span style={{ color: '#29c7ac', padding: '0 0.5rem' }}> @itsaadarsh</span>with ❤️
+    Stay Tuned For More. Built by <span style={{ color: '#29c7ac', padding: '0 0.5rem' }}> @itsaadarsh</span>with ❤️
   </BottombarStyled>
 );
 
