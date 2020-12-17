@@ -6,7 +6,6 @@ import Card from '../components/Card';
 import Bottombar from '../components/Bottombar';
 
 import section_1 from '../constants/section_1';
-import section_2 from '../constants/section_2';
 
 const HomeWrapper = styled.div`
   display: flex;
@@ -25,7 +24,7 @@ const HomeWrapper = styled.div`
 
 const TitleWrapper = styled.div`
   height: 4rem;
-  color: #444444;
+  color: #ececec;
   font-weight: 500;
   font-size: 0.9rem;
   display: flex;
@@ -49,21 +48,11 @@ const Home = () => {
     <HomeWrapper>
       <Navbar />
       <TitleWrapper>
-        Algorithmic Projects
+        Projects
       </TitleWrapper>
       <GridWrapper>
         {
           section_1.map((card, index) => (
-            <Card key={index} card={card} />
-          ))
-        }
-      </GridWrapper>
-      <TitleWrapper>
-        Games and Apps - Twelfish
-      </TitleWrapper>
-      <GridWrapper>
-        {
-          section_2.map((card, index) => (
             <Card key={index} card={card} />
           ))
         }

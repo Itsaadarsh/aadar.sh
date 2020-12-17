@@ -57,7 +57,7 @@ const ProfileStyled = styled.img`
   @media (max-width: 35rem) {
     width: 6rem;
     height: 6rem;
-    margin: 1rem 0;
+    margin: 1rem 5.5rem;
   }
 `;
 
@@ -70,6 +70,7 @@ const TitleStyled = styled.div`
 
 const BioStyled = styled.div`
 font-size: 0.9rem;
+margin: 0.7rem 0 0 0;
   color: #999999;
 `;
 
@@ -110,14 +111,11 @@ const TechStackButton = styled.div`
   display: flex;
   align-items: center;
   padding: 0.2rem 0.8rem;
-
   background-color: #ff6363;
-
   font-size: 1.6rem;
   margin: 0 0.5rem;
   height: 1.5rem;
 
-  
   transition: box-shadow 100ms;
   &:hover {
     cursor: pointer;
@@ -147,8 +145,8 @@ const Navbar = () => {
           <ProfileStyled src={Profile}></ProfileStyled>
         </SectionStyled>
         <SectionStyled>
-          <TitleStyled>Aadarsh</TitleStyled>
-          <BioStyled>I make programs that add 0 and 1 together, creatively.<br />Master Modern Full-Stack Web Development.</BioStyled>
+          <TitleStyled>Hello, I'm Aadarsh 👋</TitleStyled>
+          <BioStyled> > I make programs that add 0 and 1 together, creatively.<br /> > Mastering Modern Full-Stack Web Development.</BioStyled>
           <div style={{ display: 'flex' }}>
             <ButtonStyled href='https://github.com/Itsaadarsh' target="_blank" ><GitHubIcon />GitHub</ButtonStyled>
             <ButtonStyled href='https://www.linkedin.com/in/itsaadarsh/' target="_blank" ><LinkedInIcon />LinkedIn</ButtonStyled>
