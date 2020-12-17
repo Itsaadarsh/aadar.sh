@@ -8,6 +8,7 @@ const BottombarStyled = styled.div`
   justify-content: center;
   align-items: center;
   color: #ececec;
+  border-top: 2px solid #29c7ac;
 `;
 
 const Bottombar = () => (

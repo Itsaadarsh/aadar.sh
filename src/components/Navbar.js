@@ -4,7 +4,6 @@ import styled, { css } from 'styled-components';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
 import Profile from '../images/profile.jpg';
-
 // Icons
 import { DiGithubBadge } from 'react-icons/di';
 import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
@@ -27,12 +26,25 @@ const BioSectionStyled = styled.div`
   }
 `;
 
+const TitleWrapper = styled.div`
+  height: 4rem;
+  color: #ececec;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem 0 0 0;
+  border-top: 2px solid #29c7ac;
+  @media (max-width: 35rem) {
+    display: none;
+  }
+`;
+
 const TechStackSectionStyled = styled.div`
   height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1.3rem;
+  padding-bottom: 2.8rem;
   border-bottom: 2px solid #29c7ac;
 
   @media (max-width: 35rem) {
@@ -57,7 +69,7 @@ const ProfileStyled = styled.img`
   @media (max-width: 35rem) {
     width: 6rem;
     height: 6rem;
-    margin: 1rem 5.5rem;
+    margin: 4rem 5.5rem 0 5.5rem;
   }
 `;
 
@@ -69,8 +81,8 @@ const TitleStyled = styled.div`
 `;
 
 const BioStyled = styled.div`
-font-size: 0.9rem;
-margin: 0.7rem 0 0 0;
+  font-size: 0.9rem;
+  margin: 0.7rem 0 0 0;
   color: #999999;
 `;
 
@@ -94,27 +106,28 @@ const ButtonStyled = styled.a`
 `;
 
 const GitHubIcon = styled(DiGithubBadge)`
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-right: 0.5rem;
 `;
 
 const LinkedInIcon = styled(FaLinkedinIn)`
+  font-size: 1.2rem;
   margin-right: 0.5rem;
 `;
 
-
 const TwitterIcon = styled(FaTwitter)`
+  font-size: 1.2rem;
   margin-right: 0.5rem;
 `;
 
 const TechStackButton = styled.div`
   display: flex;
   align-items: center;
-  padding: 0.2rem 0.8rem;
-  background-color: #ff6363;
-  font-size: 1.6rem;
+  padding: 0.3rem 0.6rem;
+  background-color: #bbe1fa;
+  font-size: 2rem;
   margin: 0 0.5rem;
-  height: 1.5rem;
+  height: 1.8rem;
 
   transition: box-shadow 100ms;
   &:hover {
@@ -123,7 +136,7 @@ const TechStackButton = styled.div`
   }
 
   @media (min-width: 72rem) {
-    border: 1px solid #ff6363;
+    border: 1px solid #bbe1fa;
     border-radius: 1rem;
   }
 `;
@@ -146,19 +159,31 @@ const Navbar = () => {
         </SectionStyled>
         <SectionStyled>
           <TitleStyled>Hello, I'm Aadarsh 👋</TitleStyled>
-          <BioStyled> > I make programs that add 0 and 1 together, creatively.
-          <br /> > Mastering Modern Full-Stack Web Development.
-          <br /> > Sytem Design Enthusiastic
-            </BioStyled>
+          <BioStyled>
+            {' '}
+            > I make programs that add 0 and 1 together, creatively.
+            <br /> > Mastering Modern Full-Stack Web Development.
+            <br /> > Sytem Design Enthusiastic
+          </BioStyled>
           <div style={{ display: 'flex' }}>
-            <ButtonStyled href='https://github.com/Itsaadarsh' target="_blank" ><GitHubIcon />GitHub</ButtonStyled>
-            <ButtonStyled href='https://www.linkedin.com/in/itsaadarsh/' target="_blank" ><LinkedInIcon />LinkedIn</ButtonStyled>
-            <ButtonStyled href='https://twitter.com/itsaadarsh_' target="_blank" ><TwitterIcon />Twitter</ButtonStyled>
+            <ButtonStyled href='https://github.com/Itsaadarsh' target='_blank'>
+              <GitHubIcon />
+              GitHub
+            </ButtonStyled>
+            <ButtonStyled href='https://www.linkedin.com/in/itsaadarsh/' target='_blank'>
+              <LinkedInIcon />
+              LinkedIn
+            </ButtonStyled>
+            <ButtonStyled href='https://twitter.com/itsaadarsh_' target='_blank'>
+              <TwitterIcon />
+              Twitter
+            </ButtonStyled>
           </div>
         </SectionStyled>
       </BioSectionStyled>
+      <TitleWrapper>My Tools 🧰</TitleWrapper>
       <TechStackSectionStyled>
-        {techStack.map((tech) => (
+        {techStack.map(tech => (
           <TechStackButton showBorder={width >= 1140}>
             <tech.icon style={{ color: tech.color, fontSize: tech.size }} />
             <TechTextStyled display={width >= 1140}>{tech.name}</TechTextStyled>

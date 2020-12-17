@@ -25,16 +25,21 @@ const HomeWrapper = styled.div`
 const TitleWrapper = styled.div`
   height: 4rem;
   color: #ececec;
-  font-weight: 500;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1.5rem 0 0 0;
+  @media (max-width: 35rem) {
+    border-top: 2px solid #29c7ac;
+    margin: 5rem 0 0 0;
+  }
 `;
 
 const GridWrapper = styled.div`
   display: grid;
   grid-gap: 1.9rem;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 0 3rem 0;
   @media (max-width: 72rem) {
     grid-template-columns: 1fr 1fr;
   }
@@ -47,15 +52,11 @@ const Home = () => {
   return (
     <HomeWrapper>
       <Navbar />
-      <TitleWrapper>
-        Projects
-      </TitleWrapper>
+      <TitleWrapper>Projects 🖥️</TitleWrapper>
       <GridWrapper>
-        {
-          section_1.map((card, index) => (
-            <Card key={index} card={card} />
-          ))
-        }
+        {section_1.map((card, index) => (
+          <Card key={index} card={card} />
+        ))}
       </GridWrapper>
       <Bottombar />
     </HomeWrapper>

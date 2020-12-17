@@ -31,7 +31,7 @@ const ImageStyled = styled.img`
 `;
 
 const CaptionStyled = styled.div`
-  height: 1.7rem;
+  height: 2.7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,19 +64,18 @@ const ButtonStyled = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 1.5rem;
   padding: 0 0.5rem;
+  background-color: #222831;
   margin-left: 0.5rem;
-
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   border-radius: 0.3rem;
   border: 1px solid #dddddd;
   text-decoration: none;
-  color: black;
+  color: #ececec;
   &:hover {
     cursor: pointer;
-    background: #f8f8f8;
+    background: #29c7ac;
   }
 `;
 
@@ -104,13 +103,7 @@ const Card = ({ card }) => {
           </InfoContainerStyled>
           <ButtonContainerStyled>
             {
-              live && <ButtonStyled href={live} target="_blank">Live Demo</ButtonStyled>
-            }
-            {
               github && <ButtonStyled href={github} target="_blank"><GithubIcon />GitHub</ButtonStyled>
-            }
-            {
-              visit && <ButtonStyled href={visit} target="_blank"><GooglePlayIcon />Play Game</ButtonStyled>
             }
           </ButtonContainerStyled>
         </ContainerStyled>
