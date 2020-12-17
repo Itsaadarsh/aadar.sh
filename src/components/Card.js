@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { DiGithubBadge } from 'react-icons/di';
-import { FaGooglePlay } from 'react-icons/fa';
 
 const CardStyled = styled.div`
   display: flex;
@@ -25,7 +24,7 @@ const BodyStyled = styled.div`
 
 const ImageStyled = styled.img`
   height: 8.9rem;
-  width: 6.5rem;
+  width: 8rem;
   border-radius: 0.3rem 0 0 0;
   border-right: 1px solid #dddddd;
 `;
@@ -84,10 +83,6 @@ const GithubIcon = styled(DiGithubBadge)`
   margin-right: 0.2rem;
 `;
 
-const GooglePlayIcon = styled(FaGooglePlay)`
-  font-size: 0.7rem;
-  margin-right: 0.5rem;
-`;
 
 const Card = ({ card }) => {
   const { title, cover, github, live, visit, time, info } = card;
