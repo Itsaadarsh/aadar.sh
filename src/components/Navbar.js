@@ -76,7 +76,7 @@ const ProfileStyled = styled.img`
   @media (max-width: 35rem) {
     width: 6rem;
     height: 6rem;
-    margin: 6rem 5.5rem 0 5.5rem;
+    margin: 6rem 5.5rem 0.7rem 5.5rem;
   }
 `;
 
