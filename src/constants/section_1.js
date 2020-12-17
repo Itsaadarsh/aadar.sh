@@ -6,48 +6,44 @@ import _asciiImg from '../images/ascii.png';
 import _searchImg from '../images/search.jpg';
 
 export default [{
-  title: 'Pathfinding Snake Game Visualizer',
+  title: 'REST API Server Boilerplate',
   cover: _snakeImg,
-  github: 'https://github.com/smitbarmase/pathfinding-snake-game-visualizer',
-  live: 'https://smitbarmase.github.io/pathfinding-snake-game-visualizer/',
-  time: 'Jan 18, 2020',
-  info: 'Snake uses A* path-finding algorithm to find the food in a grid.'
+  github: 'https://github.com/Itsaadarsh/restful-api',
+  time: 'Oct 10, 2020',
+  info: 'A REST API template that performs CRUD operations, User authentication, file uploading etc.'
 }, {
-  title: 'Rubik\'s Cube AI Solver',
+  title: 'E-Commerce Website',
   cover: _cubeImg,
-  github: 'https://github.com/smitbarmase/rubiks-cube-solver',
-  live: 'https://smitbarmase.github.io/rubiks-cube-solver/',
-  time: 'March 15, 2020',
-  info: 'It uses decision based algorithm and layer-by-layer technique to solve rubik\'s cube.'
+  github: 'https://github.com/Itsaadarsh/nodeJS-express-postgresql',
+  time: 'Sept 18, 2020',
+  info: 'An e-commerce site template with NodeJS and Express server with PostgreSQL Database and TypeORM.'
 },
 {
-  title: '2048 AI Solver',
+  title: 'Care Connect',
   cover: _2048Img,
-  github: 'https://github.com/smitbarmase/2048-ai',
-  live: 'https://smitbarmase.github.io/2048-ai/',
-  time: 'March 29, 2020',
-  info: 'Solves 2048 by traversing possible states in decision tree and choose promising match via certain criteria.'
+  github: 'https://github.com/Itsaadarsh/care-connect',
+  time: 'Nov 1, 2020',
+  info: 'Your Personal Health Care Companion. An IOT based solution'
 },
 {
-  title: 'Sorting Algorithm Visualizer',
+  title: 'Job Search Website /w React.js',
   cover: _sortImg,
-  github: 'https://github.com/smitbarmase/sorting-algorithm-visualizer',
-  live: 'https://smitbarmase.github.io/sorting-algorithm-visualizer/',
-  time: 'April 12, 2020',
-  info: 'The visualization of bubble sort, merge sort and quick sort and time taken for each sort.'
+  github: 'https://github.com/Itsaadarsh/React-Job-Search-Website',
+  time: 'Nov 21, 2020',
+  info: 'Job search webapp made with React.js and Github Jobs API.'
 },
 {
-  title: 'Video To ASCII Characters Converter',
+  title: 'GraphQL server boilerplate /w Typescript, PostgreSQL, and Redis',
   cover: _asciiImg,
-  github: 'https://github.com/smitbarmase/Video-To-ASCII-Manipulation',
-  time: 'Jun 6, 2020',
-  info: 'The algorithm that converts any video or image to ASCII characters art. :)'
+  github: 'https://github.com/Itsaadarsh/graphql-server-boilerplate',
+  time: 'Dec 1, 2020',
+  info: 'GraphQL server boilerplate with the following features, Register, Login, Forgot Password, Logoutm Cookies, Auth, Rate Limiting, Testing'
 },
 {
-  title: 'Search Algorithm Visualizer',
+  title: 'Basic Vanila.js Projects',
   cover: _searchImg,
-  github: 'https://github.com/smitbarmase/react-search-algorithm-visualizer',
-  time: 'June 12, 2020',
-  info: 'The visualization of breadth-first search, depth-first search, A* search and many more. Made in react.'
+  github: 'https://github.com/Itsaadarsh/vanilaJS-projects',
+  time: 'July 12, 2020',
+  info: '5 Basic Vanila.js projects, using DOM manipulation'
 }
 ];

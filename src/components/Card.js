@@ -8,8 +8,8 @@ const CardStyled = styled.div`
   display: flex;
   flex-direction: column;
   
-  background-color: #d3dbff;
-  border-radius: 0.2rem;
+  background-color: #ececec;
+  border-radius: 0.5rem;
 
   transition: box-shadow 200ms;
   box-shadow: 0 0.16rem 0.36rem 0 rgba(0, 0, 0, 0.13), 0 0.03rem 0.09rem 0 rgba(0, 0, 0, 0.11);
@@ -20,7 +20,7 @@ const CardStyled = styled.div`
 
 const BodyStyled = styled.div`
   display: flex;
-  height: 6.5rem;
+  height: 9rem;
 `;
 
 const ImageStyled = styled.img`

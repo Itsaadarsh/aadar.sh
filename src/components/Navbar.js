@@ -146,7 +146,10 @@ const Navbar = () => {
         </SectionStyled>
         <SectionStyled>
           <TitleStyled>Hello, I'm Aadarsh 👋</TitleStyled>
-          <BioStyled> > I make programs that add 0 and 1 together, creatively.<br /> > Mastering Modern Full-Stack Web Development.</BioStyled>
+          <BioStyled> > I make programs that add 0 and 1 together, creatively.
+          <br /> > Mastering Modern Full-Stack Web Development.
+          <br /> > Sytem Design Enthusiastic
+            </BioStyled>
           <div style={{ display: 'flex' }}>
             <ButtonStyled href='https://github.com/Itsaadarsh' target="_blank" ><GitHubIcon />GitHub</ButtonStyled>
             <ButtonStyled href='https://www.linkedin.com/in/itsaadarsh/' target="_blank" ><LinkedInIcon />LinkedIn</ButtonStyled>
