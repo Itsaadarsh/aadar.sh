@@ -24,7 +24,7 @@ const BodyStyled = styled.div`
 `;
 
 const ImageStyled = styled.img`
-  height: 6.5rem;
+  height: 8.9rem;
   width: 6.5rem;
   border-radius: 0.3rem 0 0 0;
   border-right: 1px solid #dddddd;

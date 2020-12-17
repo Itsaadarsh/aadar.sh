@@ -30,8 +30,7 @@ const TitleWrapper = styled.div`
   text-align: center;
   margin: 1.5rem 0 0 0;
   @media (max-width: 35rem) {
-    border-top: 2px solid #29c7ac;
-    margin: 5rem 0 0 0;
+    margin: 5.5rem 0 0 0;
   }
 `;
 

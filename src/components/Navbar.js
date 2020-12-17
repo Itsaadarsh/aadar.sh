@@ -52,6 +52,13 @@ const TechStackSectionStyled = styled.div`
   }
 `;
 
+const BoderTop = styled.div`
+  @media (max-width: 35rem) {
+    margin: 1.4rem 0 0 0;
+    border-bottom: 2px solid #29c7ac;
+  }
+`;
+
 const SectionStyled = styled.div`
   display: flex;
   flex-direction: column;
@@ -69,7 +76,7 @@ const ProfileStyled = styled.img`
   @media (max-width: 35rem) {
     width: 6rem;
     height: 6rem;
-    margin: 4rem 5.5rem 0 5.5rem;
+    margin: 6rem 5.5rem 0 5.5rem;
   }
 `;
 
@@ -179,6 +186,7 @@ const Navbar = () => {
               Twitter
             </ButtonStyled>
           </div>
+          <BoderTop></BoderTop>
         </SectionStyled>
       </BioSectionStyled>
       <TitleWrapper>My Tools 🧰</TitleWrapper>
