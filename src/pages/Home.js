@@ -10,7 +10,7 @@ import section_1 from '../constants/section_1';
 const HomeWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 68rem;
+  width: 85rem;
   @media (max-width: 72rem) {
     width: 48rem;
   }

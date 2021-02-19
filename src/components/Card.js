@@ -6,7 +6,7 @@ import { DiGithubBadge } from 'react-icons/di';
 const CardStyled = styled.div`
   display: flex;
   flex-direction: column;
-  
+
   background-color: #ececec;
   border-radius: 0.5rem;
 
@@ -19,14 +19,21 @@ const CardStyled = styled.div`
 
 const BodyStyled = styled.div`
   display: flex;
-  height: 9rem;
+  height: 13rem;
+  @media (max-width: 35rem) {
+    height: 10rem;
+  }
 `;
 
 const ImageStyled = styled.img`
-  height: 8.9rem;
-  width: 8rem;
+  height: 13rem;
+  width: 10rem;
   border-radius: 0.3rem 0 0 0;
   border-right: 1px solid #dddddd;
+  @media (max-width: 35rem) {
+    height: 10rem;
+    width: 7rem;
+  }
 `;
 
 const CaptionStyled = styled.div`
@@ -48,8 +55,11 @@ const ContainerStyled = styled.div`
 
 const InfoContainerStyled = styled.div`
   height: 3rem;
-  font-size: 0.75rem;
+  font-size: 1rem;
   cursor: default;
+  @media (max-width: 35rem) {
+    font-size: 0.8rem;
+  }
 `;
 
 const ButtonContainerStyled = styled.div`
@@ -83,7 +93,6 @@ const GithubIcon = styled(DiGithubBadge)`
   margin-right: 0.2rem;
 `;
 
-
 const Card = ({ card }) => {
   const { title, cover, github, live, visit, time, info } = card;
   return (
@@ -91,15 +100,14 @@ const Card = ({ card }) => {
       <BodyStyled>
         <ImageStyled src={cover} />
         <ContainerStyled>
-          <InfoContainerStyled>
-            {
-              info
-            }
-          </InfoContainerStyled>
+          <InfoContainerStyled>{info}</InfoContainerStyled>
           <ButtonContainerStyled>
-            {
-              github && <ButtonStyled href={github} target="_blank"><GithubIcon />GitHub</ButtonStyled>
-            }
+            {github && (
+              <ButtonStyled href={github} target='_blank'>
+                <GithubIcon />
+                GitHub
+              </ButtonStyled>
+            )}
           </ButtonContainerStyled>
         </ContainerStyled>
       </BodyStyled>
@@ -107,7 +115,7 @@ const Card = ({ card }) => {
         <p style={{ fontSize: 12 }}> {title}</p>
         <p style={{ fontSize: 10, color: '#bbbbbb' }}>{time}</p>
       </CaptionStyled>
-    </CardStyled >
+    </CardStyled>
   );
 };
 
