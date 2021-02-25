@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
-import Profile from '../images/profile.jpg';
+import Profile from '../images/profile.png';
 // Icons
 import { DiGithubBadge } from 'react-icons/di';
 import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
@@ -68,8 +68,8 @@ const SectionStyled = styled.div`
 `;
 
 const ProfileStyled = styled.img`
-  width: 9rem;
-  height: 9rem;
+  width: 10rem;
+  height: 10rem;
   border: 1px solid #222831;
   border-radius: 5rem;
 
