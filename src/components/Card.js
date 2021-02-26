@@ -94,7 +94,7 @@ const GithubIcon = styled(DiGithubBadge)`
 `;
 
 const Card = ({ card }) => {
-  const { title, cover, github, live, visit, time, info } = card;
+  const { title, cover, github, time, info } = card;
   return (
     <CardStyled>
       <BodyStyled>

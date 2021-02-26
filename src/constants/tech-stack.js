@@ -7,7 +7,7 @@ import {
   DiMongodb,
   DiDocker,
   DiGit,
-  DiPython,
+  DiHeroku,
 } from 'react-icons/di';
 
 import { SiGraphql, SiTypescript } from 'react-icons/si';
@@ -63,5 +63,10 @@ export default [
     name: 'Docker',
     color: '#2391E6',
     icon: DiDocker,
+  },
+  {
+    name: 'Heroku',
+    color: 'purple',
+    icon: DiHeroku,
   },
 ];
