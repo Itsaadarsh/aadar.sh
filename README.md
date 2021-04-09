@@ -1,2 +1,2 @@
 # itsaadarsh.github.io
-portfolio website...........
+portfolio website.
