@@ -1,2 +1,1 @@
 # itsaadarsh.github.io!
-.
