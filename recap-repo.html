@@ -24,8 +24,8 @@
 <body class="body">
     <div class="section">
         <div class="container">
-            <div class="speaking-text" style="padding-top: 10px; font-weight: 500;"><a href="/index.html"
-                    class="link-3">⏎ aadar.sh</a>
+            <div class="speaking-text" style="padding-top: 10px; font-weight: 500;"><a href="/" class="link-3">⏎
+                    aadar.sh</a>
             </div>
             <div class="intro-wrap">
                 <h1 class="heading-jumbo">recap repo</h1>
@@ -56,5 +56,13 @@
     <div class=" container"></div>
     </div>
 </body>
+<script>
+    var loc = window.location.href;
+    var fileName = loc.split('/').pop();
+    if (fileName.indexOf('.html') > -1) {
+        var newLoc = loc.replace('.html', '');
+        window.history.replaceState(null, null, newLoc);
+    }
+</script>
 
 </html>

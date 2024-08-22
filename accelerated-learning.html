@@ -153,5 +153,13 @@
         </div>
     </div>
 </body>
+<script>
+    var loc = window.location.href;
+    var fileName = loc.split('/').pop();
+    if (fileName.indexOf('.html') > -1) {
+        var newLoc = loc.replace('.html', '');
+        window.history.replaceState(null, null, newLoc);
+    }
+</script>
 
 </html>
